@@ -1,0 +1,9 @@
+EidoMotion native codec notices
+
+The Extract 1.0.0 Android app (versionCode 37) and Cut 1.0.0 Android app (versionCode 38) include native code linked with FFmpeg 9.0.2, LAME 3.100, libvpx 1.15.2, and Opus 1.6.1 for arm64-v8a. Full license texts and source archives are included in the corresponding-source bundles under releases/1.0.0/.
+
+FFmpeg is used under the GNU Lesser General Public License, version 2.1 or (at the licensee's option) any later version. The applicable FFmpeg license text is LICENSE/COPYING.LGPLv2.1. FFmpeg GPL, version-3-only, and nonfree components are disabled in the recorded build.
+
+LAME is distributed under LGPL v2; libvpx carries its BSD-style license and patent notice; Opus carries its BSD-style license. Their notices and source archives are included in each bundle. See native-engine/NOTICE.md and each bundle's native-engine/licenses/ directory.
+
+The native libraries are statically linked into libaudioengine.so. Each per-app bundle includes the arm64-v8a static libraries and headers, the release AudioEngine.cpp.o object, and the generated link command needed to relink the shared library without supplying proprietary app source.
